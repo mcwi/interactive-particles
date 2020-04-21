@@ -17,7 +17,11 @@ void main() {
 
 	// greyscale
 	float grey = colA.r * 0.21 + colA.g * 0.71 + colA.b * 0.07;
-	vec4 colB = vec4(grey, grey, grey, 1.0);
+	//vec4 colB = vec4(grey, grey, grey, 1.0);
+
+	// Pixelart Green in RGB: 68, 229, 67
+	vec4 pixelartGreen = vec4(68./255., 229./255., 67./255., 1.0);
+	vec4 colB = vec4(pixelartGreen.r*grey, pixelartGreen.g*grey, pixelartGreen.b*grey, 1.0);
 
 	// circle
 	float border = 0.3;
@@ -27,7 +31,8 @@ void main() {
 
 	// final color
 	color = colB;
-	color.a = t;
+	// Particle Shape should be squared!
+	//color.a = t;
 
 	gl_FragColor = color;
 }

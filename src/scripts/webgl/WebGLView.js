@@ -17,6 +17,13 @@ export default class WebGLView {
 			'images/sample-03.png',
 			'images/sample-04.png',
 			'images/sample-05.png',
+			'images/sample-06.jpg',
+			'images/sample-07.jpg',
+			'images/sample-08.jpg',
+			'images/sample-09.jpg',
+			'images/sample-10.jpg',
+			'images/sample-11.png',
+			'images/sample-12.png',
 		];
 
 		this.initThree();
